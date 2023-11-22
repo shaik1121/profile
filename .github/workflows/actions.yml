@@ -26,6 +26,10 @@ jobs:
         run: |
           npm run build
 
+      - name: Debugging Info
+        run: |
+          ls -al
+
   deploy:
     runs-on: ubuntu-latest
 
