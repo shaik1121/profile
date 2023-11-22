@@ -43,4 +43,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           # server-dir: '/home/muzakkir/public_html/'
           daingerous-clean-slate: true
-          local-dir: ./dist
+          local-dir: './dist'
