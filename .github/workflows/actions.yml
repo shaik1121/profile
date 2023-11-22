@@ -38,7 +38,6 @@ jobs:
       - name: Debugging Info
         run: |
           ls -al
-          ls -al ./dist
 
       - name: 🚚 Set up FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
