@@ -30,19 +30,6 @@ jobs:
         run: |
           ls -al
 
-  deploy:
-    runs-on: ubuntu-latest
-
-    needs: build
-
-    steps:
-      - name: 🔎 Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Debugging Info
-        run: |
-          ls -al
-
       - name: 🚚 Set up FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
@@ -52,3 +39,18 @@ jobs:
           # server-dir: '/home/muzakkir/public_html/'
           dangerous-clean-slate: true
           local-dir: './dist/'
+
+  # deploy:
+  #   runs-on: ubuntu-latest
+
+  #   needs: build
+
+  #   steps:
+  #     - name: 🔎 Checkout repository
+  #       uses: actions/checkout@v3
+
+  #     - name: Debugging Info
+  #       run: |
+  #         ls -al
+
+     
