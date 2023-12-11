@@ -1,0 +1,56 @@
+ /* Global Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+ /* Set Root Font Size */
+:root {
+  font-size: 62.5%;
+}
+
+ /* Reset Margins, Padding, and Font */
+body, button, input, select, textarea {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+ /* Set Minimum Height for Body */
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+}
+
+ /* Reset List Styles */
+ol, ul {
+  list-style: none;
+}
+
+ /* Remove Button Borders */
+button {
+  border: none;
+  cursor: pointer;
+}
+
+ /* Responsive Images and Media */
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+}
+
+ /* Preserve Whitespace in Textarea */
+textarea {
+  white-space: revert;
+}
+
+ /* Reset Styles for Most Elements */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+ /* Remove Underline from Links */
+a {
+  text-decoration: none;
+  color: black;
+}

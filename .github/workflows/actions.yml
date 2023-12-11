@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: 🔎 Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: 🛠️ Set up Node.js
         uses: actions/setup-node@v4
@@ -25,10 +25,6 @@ jobs:
       - name: 👷‍♂️ Build Vite app
         run: |
           npm run build
-
-      - name: Debugging Info
-        run: |
-          ls -al
 
       - name: 🚚 Set up FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
